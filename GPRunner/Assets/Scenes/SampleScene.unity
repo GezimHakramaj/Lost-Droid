@@ -151,22 +151,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &383932089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383932087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4159164fcfae4b84a8b8e22cc15a026a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doubleBoxPrefab: {fileID: 3828137072849130436, guid: ddc5d1bac59abfc4da7099b68458157e,
-    type: 3}
-  moveSpeed: 10
-  spawnDelay: 4
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
