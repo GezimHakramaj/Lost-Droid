@@ -4,38 +4,59 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    bool dead = false; // Track if our player is dead.
 
-    public float moveSpeed;  //public variables to control speed
-    public float jumpSpeed;  //public variables to control speed
-    float left_right; //Used for left & right movement
-    float up; //Used for jump
-   
+    Rigidbody rb;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake() // Subcribing to killPlayer event.
     {
+        Kill_Player.killPlayer += OnDeath;
+    }
 
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Left to Right movement
-        //'A' key makes player go left
-        //'D' key makes player go right
-        //We use Time.deltaTime so that the character moves per seconds and not frames which makes it look smoother
+        if (dead)
+        {
+            return;
+        }
 
-        left_right = Input.GetAxis("Horizontal") * moveSpeed;
-        this.transform.Translate(left_right*Time.deltaTime, 0, 0);  //the format is (x, y, z) so we change the x variable here for horizontal movement
-
-        //Up Movement
-        //'W' key makes player jump
-        //We use Time.delaTime so that the character moves per seconds and not frames which makes it look smoother
-
-        up = Input.GetAxis("Jump") * jumpSpeed; 
-        this.transform.Translate(0, up * Time.deltaTime, 0); //moves our playerobject up on the Y Axis.
-
-
-
+        if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow))) // If presses A or <-
+        {
+            // Changes the velocity component on the player to move its x position to the left side.
+            rb.velocity = new Vector3(-2, this.transform.position.y, this.transform.position.z);
+        }
+        else if (Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow))) // D or ->
+        {
+            // Changes the velocity component on the player to move its x position to the left side.
+            rb.velocity = new Vector3(2, this.transform.position.y, this.transform.position.z);
+        }
+        else if (Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow))) // S or down arrow (duck)
+        {
+            // Changes the velocity component on the player to move its y position down.
+            rb.velocity = new Vector3(this.transform.position.y, -0.5f, this.transform.position.z);
+        }
+        else if (Input.GetKeyDown(KeyCode.Space)) // if presses space (jump)
+        {
+            // Changes the velocity component on the player to move its y position up.
+            rb.velocity = new Vector3(this.transform.position.y, 2, this.transform.position.z);
+        }
     }
+
+    private void OnDeath()
+    {
+        dead = true;
+        GetComponentInChildren<BoxCollider>().enabled = false;
+    }
+
+    private void OnDestroy()
+    {
+        Kill_Player.killPlayer -= OnDeath;
+    }
+
 }
