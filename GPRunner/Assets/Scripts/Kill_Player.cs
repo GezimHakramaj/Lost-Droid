@@ -7,9 +7,10 @@ public class Kill_Player : MonoBehaviour
     public delegate void KillHandler();
     public static event KillHandler killPlayer;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        if(collision.collider.tag == "Player")
+        if (collider.tag == "Player")
             killPlayer();
     }
+
 }
