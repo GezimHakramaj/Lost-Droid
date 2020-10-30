@@ -149,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 31753574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88a1f327a9d24b74d88f9de5c49e8432, type: 3}
+  m_Script: {fileID: 11500000, guid: 556d629d68551c340b51de067a2aeb2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &31753576
@@ -373,7 +373,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 55aa2977e3dee2846800de2c55803383,
+  m_fontColorGradientPreset: {fileID: 11400000, guid: 60c5747da0f22ae4d933b9ca2c4b3834,
     type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 55aa2977e3dee2846800de2c55803383,
+  m_fontColorGradientPreset: {fileID: 11400000, guid: 60c5747da0f22ae4d933b9ca2c4b3834,
     type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 55aa2977e3dee2846800de2c55803383,
+  m_fontColorGradientPreset: {fileID: 11400000, guid: 60c5747da0f22ae4d933b9ca2c4b3834,
     type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
