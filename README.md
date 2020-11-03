@@ -1,5 +1,6 @@
 # Lost Droid
-### Project for Intro to Game Programming CISC 3660 | In collaboration with Dennis and John.
+## Intro to Game Programming CISC 3660 project
+### In collaboration with Dennis and John.
 
 This is a small project us three have developed together using Unity, C# and free assests on the Unity Asset Store.
 
