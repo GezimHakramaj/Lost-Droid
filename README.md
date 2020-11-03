@@ -6,4 +6,9 @@ This is a small project us three have developed together using Unity, C# and fre
 
 The game is simple! You are a lost android in space. Avoid the debris hurling towards you at any cost and survive for as long as you can!
 
-### In collaboration with Dennis and John.
+
+
+### Collaborators: Gezim | Dennis | John
+### Unity Assets:
+## 
+##
