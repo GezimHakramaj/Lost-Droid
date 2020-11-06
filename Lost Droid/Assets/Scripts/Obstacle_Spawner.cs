@@ -11,7 +11,6 @@ public class Obstacle_Spawner : MonoBehaviour
     private void Awake()
     {
         Kill_Player.killPlayer += OnPlayerDeath;
-        Fall_Death.playerFall += OnPlayerFallDeath;
     }
 
     // Start is called before the first frame update
@@ -45,36 +44,23 @@ public class Obstacle_Spawner : MonoBehaviour
             // Spawn that box with the box prefab's position (x,y) but with the box spawner's z
             GameObject box = Instantiate(obstacles[rand], new Vector3(obstacles[rand].transform.position.x, obstacles[rand].transform.position.y, transform.position.z), Quaternion.identity);
             if (box.transform.childCount > 0) // Check if obj is a combination of object.
-                for(int i = 0; i < box.transform.childCount; i++)
+                for (int i = 0; i < box.transform.childCount; i++)
                     // Move the box children of empty game obj parent back on Z axis * moveSpeed
                     box.GetComponentsInChildren<Rigidbody>()[i].velocity = Vector3.back * moveSpeed;
             else
                 // Move the box back on Z axis * moveSpeed
-                box.GetComponent<Rigidbody>().velocity = Vector3.back * moveSpeed;
+                box.GetComponent<Rigidbody>().velocity = Vector3.back * moveSpeed;       
             // Wait 3 seconds before spawning again.
-            yield return new WaitForSeconds(3.0f);
+            yield return new WaitForSeconds(4.5f);
         }
     }
-
     private void OnPlayerDeath()
     {
         StopSpawn();
-        SoundManagement.PlaySound("crashSound");
-        
-
-    }
-
-    private void OnPlayerFallDeath()
-    {
-        StopSpawn();
-        SoundManagement.PlaySound("fallSound");
-
-
     }
 
     private void OnDestroy()
     {
         Kill_Player.killPlayer -= OnPlayerDeath;
-        Fall_Death.playerFall -= OnPlayerFallDeath;
     }
 }

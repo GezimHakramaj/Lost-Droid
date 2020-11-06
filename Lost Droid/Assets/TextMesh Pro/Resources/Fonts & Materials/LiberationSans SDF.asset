@@ -31,11 +31,11 @@ Material:
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
     - _OutlineSoftness: 0
-    - _OutlineWidth: 0.091
+    - _OutlineWidth: 0.026
     - _PerspectiveFilter: 0.875
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 1
-    - _ScaleRatioC: 0.31276733
+    - _ScaleRatioC: 0.29133466
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -50,7 +50,7 @@ Material:
     - _UnderlayDilate: 1
     - _UnderlayOffsetX: 1
     - _UnderlayOffsetY: -1
-    - _UnderlaySoftness: 0.338
+    - _UnderlaySoftness: 0.51
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
     - _WeightBold: 0.75

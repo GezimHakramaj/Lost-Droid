@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9204569744301147764}
   - component: {fileID: 8856486588911318095}
   - component: {fileID: -120100342369515487}
+  - component: {fileID: 5716184378450028155}
   m_Layer: 0
   m_Name: Bottom_Obst
   m_TagString: Obstacle
@@ -29,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5579247110279876043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -2.5, z: 1}
+  m_LocalScale: {x: 8, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -123,6 +124,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007a4e2b7c8b2be4488e4145b2ae1d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  val: 1
-  gameOverMenu: {fileID: 2820585280078833776, guid: 3db88266ce22a8e4782c7e156f5ba181,
-    type: 3}
+--- !u!114 &5716184378450028155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579247110279876043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56ddda3b0588814abf3193ed9e1f005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPower: 5
