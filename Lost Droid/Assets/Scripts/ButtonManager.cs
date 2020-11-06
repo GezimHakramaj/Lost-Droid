@@ -10,7 +10,7 @@ public class ButtonManager : MonoBehaviour
         switch (this.name)
         {
             case ("Play Button"):
-                SceneManager.LoadScene("Gameplay");
+                SceneManager.LoadScene("LoadUp");
                 break;
             case ("Quit Button"):
                 SceneManager.LoadScene("Main Menu");
