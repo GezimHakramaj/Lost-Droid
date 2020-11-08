@@ -35,4 +35,5 @@ If a player moves out of bounds (outside of the camera view) on either side of t
 
 -White Smoke Particle System: https://assetstore.unity.com/packages/vfx/particles/white-smoke-particle-system-20404
 
-### Collaborators: Gezim | Dennis | John
+### Collaborators: 
+#### Gezim | Dennis | John
