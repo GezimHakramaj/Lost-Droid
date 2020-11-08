@@ -2627,6 +2627,11 @@ PrefabInstance:
       propertyPath: opt2
       value: 
       objectReference: {fileID: 2100000, guid: fea1b5ba35d7e0e4fb1415ba9f3e4177, type: 2}
+    - target: {fileID: 5240093482998540838, guid: 106ee66d597cec34f81f3cb0ae50aa47,
+        type: 3}
+      propertyPath: enginePower
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9093471572752354642, guid: 106ee66d597cec34f81f3cb0ae50aa47,
         type: 3}
       propertyPath: m_LocalPosition.x
