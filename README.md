@@ -11,4 +11,17 @@ The game is simple! You are a lost android in space. Avoid the debris hurling to
 ### Collaborators: Gezim | Dennis | John
 ### Unity Assets:
 ## 
+-Jammo Character | Mix and Jam : https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456
+
+-Space Robot Kyle: https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696
+
+-Sci-Fi Barrel: https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-barrel-175837
+
+-Asteroids Pack: https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988
+
+-SpaceSkies Free: https://assetstore.unity.com/packages/2d/textures-materials/sky/spaceskies-free-80503
+
+-Free Casual Game SFX Pack: https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116
+
+
 ##
