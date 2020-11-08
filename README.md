@@ -11,12 +11,17 @@ In 2030, NASA has successfully discovered a wormhole that connects the Milky Way
 ### Controls
 
 -‘W’ or Up Arrow Key: Moves player in Upwards Direction
+
 -‘A’  or Left Arrow Key: Moves player in Left Direction
+
 -‘S’ or Down Arrow Key: Moves player in Downwards Direction
+
 -‘D’ or  Right Arrow Key: Moves player in Right Direction
 
 -If a player collides with an obstacle then the game ends.
+
 -If a player collides with an asteroid then the game ends.
+
 -If a player moves out of bounds (outside of the camera view) on either side of the screen then the game ends.
 
 
