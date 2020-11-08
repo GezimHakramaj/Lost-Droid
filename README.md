@@ -23,5 +23,7 @@ The game is simple! You are a lost android in space. Avoid the debris hurling to
 
 -Free Casual Game SFX Pack: https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116
 
+-White Smoke Particle System: https://assetstore.unity.com/packages/vfx/particles/white-smoke-particle-system-20404
+
 
 ##
