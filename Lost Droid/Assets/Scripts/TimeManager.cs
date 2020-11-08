@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
+
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI gameOverTimeText;
     public TextMeshProUGUI gameOverBestTimeText;
@@ -16,29 +17,29 @@ public class TimeManager : MonoBehaviour
 
     private void Awake()
     {
-        Kill_Player.killPlayer += TimeStop;
+        EventManager.killPlayer += TimeStop;
     }
 
-    void Start()
+    private void Start()
     {
         currentTime = 0;
         UpdateUI();
         bestTime = PlayerPrefs.GetInt("BestTime", 0);
     }
 
-    void Update()
+    private void Update()
     {
         timer += Time.deltaTime;
         currentTime = (int)(timer % 60f);
         UpdateUI();
     }
 
-    void UpdateUI()
+    private void UpdateUI()
     {
         timeText.text = currentTime + "";
     }
 
-    void TimeStop()
+    private void TimeStop()
     {
         enabled = false;
         gameOverMenu.SetActive(true);
@@ -52,6 +53,11 @@ public class TimeManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        Kill_Player.killPlayer -= TimeStop;
+        EventManager.killPlayer -= TimeStop;
+    }
+
+    public int GetTime()
+    {
+        return currentTime;
     }
 }

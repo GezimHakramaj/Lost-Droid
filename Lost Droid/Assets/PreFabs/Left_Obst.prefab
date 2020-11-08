@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 984645176921270811}
   - component: {fileID: 7233558440546582622}
   - component: {fileID: 2764226539225293658}
-  - component: {fileID: -5620558230875314351}
   - component: {fileID: 5898131048002918525}
+  - component: {fileID: -3847904977095074677}
   m_Layer: 0
   m_Name: Left_Obst
   m_TagString: Obstacle
@@ -112,18 +112,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-5620558230875314351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6918632721278462459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 007a4e2b7c8b2be4488e4145b2ae1d9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5898131048002918525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,3 +125,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationPower: 5
+--- !u!114 &-3847904977095074677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6918632721278462459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c13294bd1a8b95419855c14f6a3f832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

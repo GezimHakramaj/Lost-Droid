@@ -7,6 +7,9 @@ TagManager:
   - Floor
   - Obstacle
   - OutOfBounds
+  - Power Up
+  - Enemy
+  - Asteroid
   layers:
   - Default
   - TransparentFX

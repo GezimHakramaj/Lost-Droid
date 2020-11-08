@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Load : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject text;
     float timer = 0;
     int ctime = 0; 
 
@@ -14,7 +14,9 @@ public class Load : MonoBehaviour
         timer += Time.deltaTime;
         ctime = (int)(timer % 60f);
         if (ctime > 1)
-            SceneManager.LoadScene("Gameplay");
+            text.SetActive(true);
+        if (ctime > 3 || Input.GetMouseButtonDown(0))
+            SceneManager.LoadScene("Main Menu");
     }
 
     

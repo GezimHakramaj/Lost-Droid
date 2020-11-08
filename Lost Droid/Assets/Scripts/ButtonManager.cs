@@ -10,7 +10,7 @@ public class ButtonManager : MonoBehaviour
         switch (this.name)
         {
             case ("Play Button"):
-                SceneManager.LoadScene("LoadUp");
+                SceneManager.LoadScene("Gameplay");
                 break;
             case ("Quit Button"):
                 SceneManager.LoadScene("Main Menu");
@@ -19,9 +19,9 @@ public class ButtonManager : MonoBehaviour
                 SceneManager.LoadScene("Gameplay");
                 this.gameObject.SetActive(false);
                 break;
-                /* case ("Quit MM Button"):
-                    QUIT GAME.
-                    */
+            case ("Quit MM Button"):
+                Application.Quit();
+                break;
         }
     }
 }
